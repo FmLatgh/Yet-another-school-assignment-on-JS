@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>ToDo.Dos</title>
+</head>
+
+<body>
+<div id="mainProfile" class="whiteBox firstRow">
+    <h1>To-Do website</h1>
+    <p>Insert to-do things in input so you can check em off</p>
+    <input id="todo" type="text">
+    <button onclick="addListItemAfterClick()">Add to-do item</button>
+
+</div>
+
+<div id="mainInfo" class="whiteBox secondRow">
+    <h2>My to do list</h2>
+    <p>You can click on the to-do item to check it off.</p>
+    <p>If you want to erase a to-do item, you can click on the X.</p>
+    <ul id="todoContainer">
+
+
+    </ul>
+    <br>
+    <p>Else, use this button right here to remove all items.</p>
+    <button onclick="removeAll()">Remove all items</button>
+</div>
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
