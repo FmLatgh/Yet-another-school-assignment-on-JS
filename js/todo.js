@@ -53,3 +53,33 @@ function removeLatest() {
     childlist.removeChild(victim);
     victim = childlist.lastChild;
 }
+
+function compliment() {
+    let caseselect = Math.floor(Math.random() * 10)
+    if (caseselect = 0) {
+        caseselect = 1;
+    } else if (caseselect > 5) {
+        caseselect = 5;
+    }
+    switch(caseselect) {
+        case 1:
+            document.getElementById("complimentID").innerText = "You're awesome!";
+            break;
+            case 2:
+                document.getElementById("complimentID").innerText = "You're amazing!";
+                break;
+                case 3:
+                    document.getElementById("complimentID").innerText = "You're super!";
+                    break;
+                    case 4:
+                        document.getElementById("complimentID").innerText = "You're incredible!";
+                        break;
+                        case 5:
+                            document.getElementById("complimentID").innerText = "You're simply the best!";
+                            break;
+                            default:
+                                document.getElementById("complimentID").innerText = "You're awesome!";
+                                break;
+    }
+
+}
