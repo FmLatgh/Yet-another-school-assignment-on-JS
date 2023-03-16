@@ -47,3 +47,9 @@ function removeAll() {
      }
 }
 
+function removeLatest() {
+    var childlist = document.querySelector("ul");
+    var victim = childlist.lastChild;
+    childlist.removeChild(victim);
+    victim = childlist.lastChild;
+}
