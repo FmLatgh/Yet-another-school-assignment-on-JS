@@ -8,7 +8,7 @@ function makeListItem() {
     function checkToDoItem() {
         listitem.classList.toggle("checkedItem");
     }
-    listitem.addEventListener("click", checkToDoItem);
+    listitem.addEventListener("click", toggleToDo);
     
     document.getElementById("todo").value = "";
     
@@ -46,3 +46,4 @@ function removeAll() {
      killChild = childs.lastChild; //Takes the new last one
      }
 }
+
